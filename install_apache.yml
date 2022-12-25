@@ -4,9 +4,9 @@
   become: true
   tasks: 
 
-  - name: install apache service 
+  - name: install apache(httpd) service 
     yum: 
-      name: apache2
+      name: httpd
       state: present     
 
 
