@@ -8,3 +8,4 @@
      yum: 
        name: httpd
        state: present
+     when:  "ansible_distribution" == "Amazon" and "ansible_distribution_version" == "2"
