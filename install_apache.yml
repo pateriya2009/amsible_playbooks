@@ -12,6 +12,7 @@
 
    - name: install apache and php packages 
      yum: 
+       update_cache: yes
        name: 
          - httpd
          - php
