@@ -2,7 +2,6 @@
 
 -  hosts: all
    become: true
-   shraum: nginx
    tasks: 
 
    - name: install "{{ shraum }}" 
