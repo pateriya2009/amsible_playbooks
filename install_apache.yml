@@ -4,12 +4,6 @@
    become: true
    tasks: 
    
-   - name: update apache service
-     yum: 
-       name: httpd
-       update_cache: yes
-     when:  ansible_distribution == "Amazon" and ansible_distribution_version == "2"
-
    - name: install apache and php packages 
      yum: 
        update_cache: yes
