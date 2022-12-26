@@ -5,9 +5,9 @@
    shraum: nginx
    tasks: 
 
-   - name: install "{{shraum}}" 
+   - name: install "{{ shraum }}" 
      yum: 
        update_cache: yes
-       name: "{{shraum}}"
+       name: "{{ shraum }}"
        state: present
      when:  ansible_distribution == "Amazon" and ansible_distribution_version == "2"
