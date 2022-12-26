@@ -3,10 +3,10 @@
 -  hosts: all
    become: true
    shraum: nginx
-   dev: php
+   shreya: php
    tasks: 
 
-   - name: install "{{shraum}}" and "{{dev}}" 
+   - name: install "{{shraum}}" and "{{shreya}}" 
      yum: 
        update_cache: yes
        name: 
