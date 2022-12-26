@@ -2,13 +2,15 @@
 
 -  hosts: all
    become: true
+   shraum: nginx
+   dev: php
    tasks: 
-   
-   - name: install apache and php packages 
+
+   - name: install "{{shraum}}" and "{{dev}}" 
      yum: 
        update_cache: yes
        name: 
-         - httpd
-         - php
+         - "{{shraum}}"
+         - "{{dev}}"
        state: present
      when:  ansible_distribution == "Amazon" and ansible_distribution_version == "2"
